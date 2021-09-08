@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 /**
  * @author Junzhou Liu
- * @create 2020/10/11 20:49
+ * @since 2020/10/11 20:49
  */
 public class HelpUtil {
 	private static final String TABLE = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
@@ -14,10 +14,6 @@ public class HelpUtil {
 	static int[] ss = {11, 10, 3, 8, 4, 6, 2, 9, 5, 7};
 	static long xor = 177451812;
 	static long add = 8728348608L;
-
-	public static void main(String[] args) {
-
-	}
 
 	public static long power(int a, int b) {
 		long power = 1;

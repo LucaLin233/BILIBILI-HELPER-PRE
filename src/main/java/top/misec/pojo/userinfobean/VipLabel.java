@@ -9,11 +9,10 @@ import lombok.Data;
  * @since 2020/10/11 4:21
  */
 @Data
-public class Wallet {
+public class VipLabel {
 
-    private long mid;
-    private int bcoin_balance;
-    private int coupon_balance;
-    private int coupon_due_time;
+    private String path;
+    private String text;
+    private String label_theme;
 
 }

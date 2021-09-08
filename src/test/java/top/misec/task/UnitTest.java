@@ -1,7 +1,6 @@
 package top.misec.task;
 
 import lombok.extern.log4j.Log4j2;
-import org.junit.Test;
 import top.misec.config.Config;
 import top.misec.login.ServerVerify;
 import top.misec.login.Verify;
@@ -13,8 +12,8 @@ import top.misec.utils.VersionInfo;
  */
 @Log4j2
 public class UnitTest {
-    @Test
-    public void main(String[] args) {
+
+    public static void main(String[] args) {
         if (args.length < 3) {
             log.info("任务启动失败");
             log.warn("Cookies参数缺失，请检查是否在Github Secrets中配置Cookies参数");
@@ -34,17 +33,9 @@ public class UnitTest {
         //初始化配置
         Config.getInstance().configInit();
 
-        new UserCheck().run();
+
         ServerPush.doServerPush();
-        //new CoinAdd().run();
 
-//        GetVideoId getVideoId=new GetVideoId();
-//        getVideoId.videoUpdate("14602398");
-//        System.out.println(getVideoId.getFollowUpVideoList());
-//        System.out.println(getVideoId.getRankVideoList());
-
-        GetVipPrivilege getVipPrivilege = new GetVipPrivilege();
-        getVipPrivilege.run();
 
     }
 }
